@@ -32,7 +32,7 @@ def analyze_data(data_1d):
     return mean, var, median, min(data_1d), max(data_1d)
 
 if __name__ == '__main__':
-    data = read_data('C:\\SPB_Data\\20240314\\week3\\python02_lab\\data\\class_score_en.csv')
+    data = read_data('C:\\SPB_Data\\20240314\\week3\\data\\class_score_en.csv')
     if data and len(data[0]) == 2: # Check 'data' is valid
         average = calc_weighted_average(data, [40/125, 60/100])
 
